@@ -57,26 +57,48 @@ YOU DO
 """
 # assign the string "Strings are awesome!" to a variable
 
+string = "Strings are awesome!"
+
 # print the length of the string
+print(len(string))
 
 # print the first occurrence of "a"
+print(string.index("a"))
 
 # print the count of the number of "a"s in the string
+print(string.count("a"))
 
 # print the first five characters
+print(string[0:5])
 
 # print the last five characters in reverse
+print(string[-5:])
 
 # print the 17th character
+print(string[17:1])
 
 # print all the odd indexes
+odd_i = [] 
+even_i = [] 
+for i in range(0, len(string)): 
+    if i % 2: 
+        even_i.append(string[i]) 
+    else : 
+        odd_i.append(string[i]) 
+  
+print(odd_i)
 
 # print the string in all uppercase
+print(string.upper())
 
 # print the string in all lowercase
+print(string.lower())
 
 # check that the string starts with "S" and ends with "!"
-
+print(string.startswith("S"))
+print(string.endswith("!"))
 
 # split the string on the spaces
+split = string.split(" ")
+print(split)
 
