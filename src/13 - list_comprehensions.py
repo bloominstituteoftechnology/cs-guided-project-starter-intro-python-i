@@ -5,22 +5,23 @@ List Comprehensions
 # in a single, readable line
 
 # 1.
-# # WITHOUT LIST COMPREHENSIONS
-# sentence = "the quick brown fox jumps over the lazy dog"
-# words = sentence.split()
-# word_lengths = []
-# for word in words:
-#       if word != "the":
-#           word_lengths.append(len(word))
-# print(words)
-# print(word_lengths)
+# WITHOUT LIST COMPREHENSIONS
+sentence = "the quick brown fox jumps over the lazy dog"
+words = sentence.split()
+word_lengths = []
+for word in words:
+      if word != "the":
+          word_lengths.append(len(word))
+print(words)
+print(word_lengths)
 
-# # WITH LIST COMPREHENSIONS
-# sentence = "the quick brown fox jumps over the lazy dog"
-# words = sentence.split()
-# word_lengths = [len(word) for word in words if word != "the"]
-# print(words)
-# print(word_lengths)
+# WITH LIST COMPREHENSIONS
+sentence = "the quick brown fox jumps over the lazy dog"
+words = sentence.split()
+word_lengths = [len(word) for word in words if word != "the"]
+
+print(words)
+print(word_lengths)
 
 
 """
@@ -32,4 +33,7 @@ YOU DO
 # and make sure all the names are properly
 # capitalized in the new list.
 
-# names = ["Sarah", "jorge", "sam", "frank", "bob", "sandy", "shawn"]
+names = ["Sarah", "jorge", "sam", "frank", "bob", "sandy", "shawn"]
+cap_names = [i.capitalize() for i in names if i[0].upper()=='S']
+
+print(cap_names)
